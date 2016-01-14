@@ -11,7 +11,7 @@ class GridCRF(GraphCRF):
     This leads to n_classes parameters for unary potentials and
     n_classes * (n_classes + 1) / 2 parameters for edge potentials.
 
-    Unary evidence ``x`` is given as array of shape (width, height, n_states),
+    Unary evidence ``x`` is given as array of shape (width, height, n_features),
     labels ``y`` are given as array of shape (width, height). Grid sizes do not
     need to be constant over the dataset.
 
@@ -89,7 +89,7 @@ class DirectionalGridCRF(GridCRF, EdgeFeatureGraphCRF):
     (horizontal and vertical) or 4 for a 8 connected neighborhood (additionally
     two diagonals).
 
-    Unary evidence ``x`` is given as array of shape (width, height, n_states),
+    Unary evidence ``x`` is given as array of shape (width, height, n_features),
     labels ``y`` are given as array of shape (width, height). Grid sizes do not
     need to be constant over the dataset.
 
@@ -145,7 +145,7 @@ class DirectionalGridCRF(GridCRF, EdgeFeatureGraphCRF):
 
         Parameters
         ----------
-        x : ndarray, shape (width, height, n_states)
+        x : ndarray, shape (width, height, n_features)
             Unary evidence / input.
 
         y : ndarray or tuple
