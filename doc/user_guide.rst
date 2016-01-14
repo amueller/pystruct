@@ -441,7 +441,7 @@ above a node representing "sky" is more likely to also represent "sky" than
 "water".
 
 A great example of the importance of edge features is
-:ref:`example_plot_snakes.py`.
+:ref:`sphx_glr_auto_examples_plot_snakes.py`.
 
 
 Latent Variable Models
@@ -476,7 +476,7 @@ This can be seen as a structured variant of the latent SVM approach as follows:
 If there is a single node in the graph (that is doing multi-class
 classification), we introduce latent subclasses for each of the target classes.
 We can then learn a separate classifier for each of the subclasses, which might
-be easier.  An example is given in :ref:`example_plot_latent_svm_as_crf.py`,
+be easier.  An example is given in :ref:`sphx_glr_auto_examples_plot_latent_svm_as_crf.py`,
 where images of odd numbers are classified against images of even numbers. It
 is much easier to learn a linear classifier that separates one digit from the
 other digits, than trying to learn a linear separation between even and odd
@@ -489,7 +489,7 @@ A complex action like a juming jack is made up of several distinct sub-actions,
 and there is a distinct order in which the sub-actions are performed.
 The latent dynamic CRF can learn this order.
 
-See :ref:`example_plot_latent_crf.py` for an example on a 2d grid.
+See :ref:`sphx_glr_auto_examples_plot_latent_crf.py` for an example on a 2d grid.
 
 How to Write Your Own Model
 ============================

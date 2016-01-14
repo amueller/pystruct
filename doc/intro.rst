@@ -38,7 +38,7 @@ each word individually. This seems somehow better, since we could learn to get
 most of the word in a sentence right. On the other hand, we lose all context.
 So for example the expression "car door" is way more likely than "car boar",
 while predicted individually these could be easily confused.
-For a similar example, see :ref:`example_plot_letters.py`.
+For a similar example, see :ref:`sphx_glr_auto_examples_plot_letters.py`.
 
 Structured prediction tries to overcome these problems by considering the
 output (here the sentence) as a whole and using a loss function that is
